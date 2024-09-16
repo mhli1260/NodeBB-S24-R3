@@ -68,7 +68,7 @@ $('document').ready(function () {
         function validateUsername(field) {
             if (!utils.isUserNameValid(field) || !slugify(field)) {
                 parent.addClass('error');
-                help.html(`Invalid Username.`);
+                help.html('Invalid Username.');
             } else {
                 parent.removeClass('error');
             }
